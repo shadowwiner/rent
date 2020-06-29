@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="css/for_client.css">
+  <link rel="stylesheet" href="css/main2.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>LoftCity</span>
+    </div>
+
+    <div id= "vhod">
+      <a href="index.html"  title="Главная страница сайта">Главная</a>
+      |
+      <a href="index.html" title="Выйти">Выйти</a> 
+      
+    </div>
+
+    <div id="about">
+      <a href="#" onclick="slowScroll('#overview')" title="Квартиры">Мои обьявления</a>
+      <a href="#" onclick="slowScroll('#main')" title="Главная" >Избранное</a>
+      <a href="#" onclick="slowScroll('#main')" title="Главная" >Сообщения</a> 
+      <a href="#" onclick="slowScroll('#contacts')" title="Помощь">Настройки</a>
+    </div>
+
+  </header>
+
+  
+
+
+  <div id="overview">
+    <div class="all">
+      <input checked type="radio" name="respond" id="desktop">
+        <article id="slider">
+            <input checked type="radio" name="slider" id="switch1">
+            <input type="radio" name="slider" id="switch2">
+            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="slider" id="switch4">
+            <input type="radio" name="slider" id="switch5">
+          <div id="slides">
+            <div id="overflow">
+              <div class="image">
+                <article><img src="1.jpg"></article>
+                <article><img src="2.jpg"></article>
+                <article><img src="3.jpg"></article>
+                <article><img src="4.jpg"></article>
+                <article><img src="5.jpg"></article>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+          </div>
+          <div id="active">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+            <label for="switch5"></label>
+          </div>
+        </article>
+    </div>
+  </div>
+  
+  <div id="main">
+    <div class="intro">
+      <h2>Наши услуги помогут вам!</h2>
+      <span>Большой выбор квартир.</span>
+    </div>
+    <div class="text">
+      <span>Квартиры для аренды на сутки в Минске. Вы можете снять квартиру на срок от нескольких часов, дней или даже недель. 
+          'LoftCity' — это сервис по поиску жилья для краткосрочной аренды без посредников.
+           Гарантируем надежность как для арендадателя, так и для арендатора.
+           Квартиры для аренды на сутки в Минске. Вы можете снять квартиру на срок от нескольких часов, дней или даже недель. 
+          'LoftCity' — это сервис по поиску жилья для краткосрочной аренды без посредников.
+           Гарантируем надежность как для арендадателя, так и для арендатора.
+           Квартиры для аренды на сутки в Минске. Вы можете снять квартиру на срок от нескольких часов, дней или даже недель. 
+          'LoftCity' — это сервис по поиску жилья для краткосрочной аренды без посредников.
+           Гарантируем надежность как для арендадателя, так и для арендатора.
+           Квартиры для аренды на сутки в Минске. Вы можете снять квартиру на срок от нескольких часов, дней или даже недель. 
+          'LoftCity' — это сервис по поиску жилья для краткосрочной аренды без посредников.
+           Гарантируем надежность как для арендадателя, так и для арендатора.
+      </span>
+    </div>
+  </div>
+  <div id="contacts">
+    <center><h5>Настройки аккаунта</h5></center>
+    <form id="form_input">
+      <label for="name">Фамилия <span>*</span></label><br>
+      <input type="text" placeholder="Введите фамилию" name="name" id="name"><br>
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="name">Отчество <span>*</span></label><br>
+      <input type="text" placeholder="Введите отчество" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name="email" id="email"><br>
+      <label for="name">Введите новый пароль <span>*</span></label><br>
+      <input type="text" placeholder="новый пароль" name="name" id="name"><br>
+      <label for="name">Повторите пароль <span>*</span></label><br>
+      <input type="text" placeholder="повторите новый пароль" name="name" id="name"><br>
+			
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата без регистарции?</span>
+      <p> Можно оплатить через ерип по коду услуги, а так же  наличными. </p>
+      <span class="heading">Как будет проходит оплата при регистрации на сайте?</span>
+      <p>При регистрации на сайте есть возможность привязать банковскую карточку.
+        Так же можно оплатить через ерип по коду услуги, а так же наличными.</p>
+       </div>
+    <div>
+      <span class="title">Арендадателю</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p></p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p></p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p></p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p></p>
+      <span class="heading">Какие гарантии есть</span>
+      <p></p>
+      <span class="heading">Какие гарантии есть</span>
+      <p></p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #000000;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 20%;
+    font-size: 1.1em;
+  }
+
+  #about {
+    float: right;
+    width: 40%;
+  }
+  #vhod {
+    float: right;
+    width: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+  #vhod{
+    float: left;
+    width: 100%;
+  }
+}
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+#vhod {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {color: #000000}
+#vhod > a {color: #000000}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+#vhod > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+.fixed #vhod a {color: #343434}
+.fixed #vhod a:hover {color: #7c7c7c}
+
+
+/* Блок с преимуществами */
+
+#overview {
+  float: left;
+
+  background-blend-mode: multiply;
+  background-color: #f6f6f6;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#overview img {
+  background: #fafafa;
+  padding: 3px;
+  border: 2px solid silver;
+  float: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Вопросы и ответы */
+
+#faq {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 40px;
+}
+
+
+.search {
+  width: 100%;
+}
+
+.d1:after {content:""; clear:both; display:table}
+.d1 form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+.d1 input {
+  width: 450px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #979d9e;
+  background: rgb(216, 214, 211);
+  outline: none;
+}
+
+.d1 button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  right: 0;
+  top: -2px;
+}
+
+.d1 button:before{
+  content: "\1F50D";
+
+  color: #324b4e;
+}
+
+.list {
+    padding: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.smeshenie{
+  padding-top: 70px;
+  position: fixed;
+  top: 30px;
+  width: 200px;
+}
+
+.left_side {
+  min-height: 200px;
+  background:  rgb(216, 214, 211);
+  padding-top: 10px;
+  border-radius: 10px;
+
+}
+
+.left_filter{
+padding-top: 10px;
+}
+
+.list_kv{
+  min-height: 2em;
+  width: 80%;
+  padding-left: 200px;
+}
+
+.raz {
+    padding: 10px;
+    min-height: 2em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    
+}
+.record{
+display: flex;
+border: 4px black;
+}
+
+.photo img{
+width: auto;
+height: 150px;
+padding-left: 10px;
+padding-right: 20px;
+padding-top: 20px;
+}
+
+.infa{
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 900px;
+    padding-top: 20px;
+}
+
+.contacts{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100px;
+    padding-top: 20px;
+}
+.pages{
+  padding-left: 600px;
+}
+
+
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+ul.pagination li a.active {
+  background-color: #979d9e;
+  color: white;
+  border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 5px 6px; /* Расположите значок поиска */
+  background-repeat: no-repeat; /* Не повторяйте изображение значка */
+  width: 130px; /* Полная ширина */
+  font-size: 12px; /* Увеличить размер шрифта */
+  padding: 5px 10px 6px 20px; /* Добавить немного отступов */
+  border: 1px solid #ddd; /* Добавить серую границу */
+  margin-bottom: 12px; /* Добавить некоторое пространство под входом */
+  margin-top: 10px;
+}
+
+#myUL {
+  /* Удалить стиль списка по умолчанию */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Добавить границу для всех ссылок */
+  margin-top: -1px; /* Предотвращение двойных границ */
+  background-color: #f6f6f6; /* Серый цвет фона */
+  padding: 4px; /* Добавить немного отступов */
+  text-decoration: none; /* Удалить подчеркивание текста по умолчанию */
+  font-size: 14px; /* Увеличьте размер шрифта */
+  color: black; /* Добавить черный цвет текста */
+  display: block; /* Сделайте его в элемент блока, чтобы заполнить весь список */
+  width: 130px;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Добавить эффект наведения на все ссылки, кроме заголовков */
+}

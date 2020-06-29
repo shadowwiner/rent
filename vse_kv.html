@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Все квартиры</title>
+  <link rel="stylesheet" href="css/vse_kv.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>LoftCity</span>
+    </div>
+
+    <div id= "vhod">
+      <a href="index.html"  title="Главная страница сайта">Главная</a>
+      <a href="index.html" title="Выйти">Выйти</a> 
+    </div>
+
+    <div id="about">
+      <a href="#" onclick="slowScroll('#overview')" title="Квартиры">Мои обьявления</a>
+      <a href="#" onclick="slowScroll('#main')" title="Главная" >Избранное</a>
+      <a href="#" onclick="slowScroll('#main')" title="Главная" >Сообщения</a> 
+      <a href="#" onclick="slowScroll('#contacts')" title="Помощь">Настройки</a>
+
+<!--  Поиск -->
+      <div class="search">
+        <div class="d1">
+          <form>
+          <input type="text" placeholder="Искать здесь...">
+          <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- список всех квартир -->
+<div class="list">
+
+    <!-- Фильтр для квартир -->
+  <div class="smeshenie">
+    <div class="left_side"> 
+
+      <div  class="left_filter">
+        <p>Фильтры</p>
+        <!-- сколько комнат -->
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск имен..">
+
+        <ul id="myUL">
+          <li><a href="#">1-комнатная</a></li>
+          <li><a href="#">2-комнатная</a></li>
+          <li><a href="#">3-комнатная</a></li>
+          <li><a href="#">4-комнатная</a></li>
+          <li><a href="#">5-комнатная</a></li>
+          <li><a href="#">Другое</a></li>
+        </ul> 
+
+      </div>
+
+    </div>
+  </div>
+<!-- Список квартир -->
+  <div class="list_kv">
+    <div class="raz">
+        <div class="record">
+          <div class="photo">
+            <img src="1.jpg">
+          </div>
+          <div class="infa">
+              <p>infsfjahciahsck</p>
+          </div>
+          <div class="contacts">
+              <p>infsfjahciahsck</p>
+          </div>
+        </div>
+    
+        <div class="record">
+          <div class="photo">
+            <img src="1.jpg">
+          </div>
+          <div class="infa">
+              <p>infsfjahciahsck</p>
+          </div>
+          <div class="contacts">
+              <p>infsfjahciahsck</p>
+          </div>
+        </div>
+
+        <div class="record">
+          <div class="photo">
+            <img src="1.jpg">
+          </div>
+          <div class="infa">
+              <p>infsfjahciahsck</p>
+          </div>
+          <div class="contacts">
+              <p>infsfjahciahsck</p>
+          </div>
+        </div>
+
+        <div class="record">
+          <div class="photo">
+            <img src="1.jpg">
+          </div>
+          <div class="infa">
+              <p>infsfjahciahsck</p>
+          </div>
+          <div class="contacts">
+              <p>infsfjahciahsck</p>
+          </div>
+        </div>
+
+        <div class="record">
+          <div class="photo">
+            <img src="1.jpg">
+          </div>
+          <div class="infa">
+              <p>infsfjahciahsck</p>
+          </div>
+          <div class="contacts">
+              <p>infsfjahciahsck</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+<div class="pages">
+  <ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href="#">1</a></li>
+    <li><a class="active" href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+</div>
+ 
+<!--инфа по квартирам-->
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата без регистарции?</span>
+      <p> Можно оплатить через ерип по коду услуги, а так же  наличными. </p>
+      <span class="heading">Как будет проходит оплата при регистрации на сайте?</span>
+      <p>При регистрации на сайте есть возможность привязать банковскую карточку.
+        Так же можно оплатить через ерип по коду услуги, а так же наличными.</p>
+       </div>
+    <div>
+      <span class="title">Арендадателю</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p></p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p></p>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p></p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p></p>
+      <span class="heading">Какие гарантии есть</span>
+      <p></p>
+      <span class="heading">Какие гарантии есть</span>
+      <p></p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/rooms.js" ></script>
+  <script src="faker.js"></script>
+
+  
+</body>
+
+</html>
